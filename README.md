@@ -66,3 +66,14 @@ chmod +x install_part1.sh install_part2.sh
 - 进入vi后按 i 粘贴之前整段part1代码
 ​
 - 粘贴完按 ESC → 输入 :wq 回车保存退出
+
+
+
+
+
+
+# 方式一：带域名 —— 自动申请 SSL 证书并把证书配到面板，其余全部用默认值
+XUI_DOMAIN=panel.example.com bash <(curl -Ls https://raw.githubusercontent.com/Teminuosi/3x-ui/main/install.sh)
+
+# 方式二：不带域名 —— 全部用默认值、随机端口，不申请证书
+XUI_AUTO=1 bash <(curl -Ls https://raw.githubusercontent.com/Teminuosi/3x-ui/main/install.sh)
