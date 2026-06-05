@@ -50,3 +50,19 @@ chmod +x install_part1.sh install_part2.sh
 ./install_part2.sh
 
 
+电脑ssh
+
+# 1.创建文件
+vi install_part1.sh
+
+vi install_part2.sh
+
+
+chmod +x install_part1.sh install_part2.sh
+
+./install_part2.sh
+
+
+- 进入vi后按 i 粘贴之前整段part1代码
+​
+- 粘贴完按 ESC → 输入 :wq 回车保存退出
