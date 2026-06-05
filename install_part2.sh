@@ -1,7 +1,14 @@
 #!/bin/bash
-#引入第一段所有函数
-source ./install_part1.sh
+# 自动检测并加载同目录依赖脚本install_part1.sh
+# 依赖缺失直接终止安装，避免函数未载入报错
+if [ -f "./install_part1.sh" ]; then
+    source ./install_part1.sh
+else
+    echo -e "\033[0;31m【错误】同目录找不到install_part1.sh依赖脚本，请和本脚本放在同一目录再执行！\033[0m"
+    exit 1
+fi
 
+# ==========下方保留你原来全部install_part2.sh原有代码（install_x-ui函数及后续内容原样不动）==========
 install_x-ui() {
     cd ${xui_folder%/x-ui}/
     #=========唯一修改点：放弃github下载，使用本地/root/3xui.tar.gz，剩余全保留原代码=========
