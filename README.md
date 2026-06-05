@@ -39,3 +39,14 @@ x-ui restart    #重启面板
 x-ui status     #查看运行状态
 x-ui log        #查看运行日志
 x-ui uninstall  #卸载面板
+
+
+nano install_part1.sh
+
+nano install_part2.sh
+
+
+chmod +x install_part1.sh install_part2.sh
+./install_part2.sh
+
+
