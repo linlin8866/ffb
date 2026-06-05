@@ -30,3 +30,12 @@ XUI_DOMAIN=你的域名.com bash <(curl -Ls https://raw.githubusercontent.com/li
 XUI_AUTO=1 bash <(curl -Ls https://raw.githubusercontent.com/linlin8866/ffb/main/install_part2.sh)
 
 
+查看面板
+x-ui settings
+
+x-ui start      #启动面板
+x-ui stop       #停止面板
+x-ui restart    #重启面板
+x-ui status     #查看运行状态
+x-ui log        #查看运行日志
+x-ui uninstall  #卸载面板
